@@ -44,7 +44,7 @@ on edge devices.
 | **Edge Agents** | **pi-orchestration · watcher-agent** | Jetson 로컬 멀티에이전트(planner/executor/validator), GitHub commit → diff 요약 → Slack 자동 리포팅 봇 |
 | **Knowledge Base** | **knowledge-vault** | 논문 리뷰 110+ 노트(Agentic-AI / SciML-PINN / DL foundations) + 자작 Claude 스킬 6종(paper-summary, obsidian-notes 등) |
 
-> 소속: KETI (Korea Electronics Technology Institute) 연구 프로젝트 중심.
+> 소속: KETI (Korea Electronics Technology Institute)
 
 ---
 
