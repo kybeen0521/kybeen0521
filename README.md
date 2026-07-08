@@ -20,7 +20,7 @@ on edge devices.
 - 🔧 **Domain:** rotating machinery — motors, bearings, pumps/fans; vibration & acceleration signals
 - 🧠 **Method:** Time-Series Foundation Models (MOMENT, TimesFM), Gaussian-process surrogates, operator learning (FNO/PINN)
 - 🤖 **Systems:** planner / executor / validator multi-agent orchestration on NVIDIA Jetson
-- 📍 Korea · 📫 keti.credit@gmail.com
+- 📍 Korea · 📫 kybeen0521@gmail.com
 
 ---
 
