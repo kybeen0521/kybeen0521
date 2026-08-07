@@ -39,8 +39,8 @@ on edge devices.
 |------|---------|---------|
 | **PHM 실증** | **IE4 Motor Field Trial** | 부산 자갈치 IE4 고효율 모터 현장에 MotorSense 진동센서 설치 → WiFi AP → 클라우드 Console → API 파형 수집 파이프라인 구축 (현장 출장·통신 셋업·데이터셋 생성) |
 | **유체기기 최적화** | **KETI_FLOW** | 펌프/팬 운전점 최적화 시스템 — 표준 CSV → **GPR 대리모델**(Head·Power) → LUT·PQ맵 사전계산 → MQTT 학습수신 + TCP 예측루프 런타임 |
-| **Agentic AI** | **Blender Orchestration** | 자연어/수치 조건 → 파트별 agent 병렬 저작 → Blender 조립 → **결정론적 기하 측정** → per-agent 스코어카드(오차·latency·tokens 귀속), MCP 라이브 세션 |
-| **PHM / RUL** | **Bearing RUL (KSPHM)** | 시계열 파운데이션 모델(MOMENT) 기반 회전기기 고장시점 예측 — ±540s 라벨 노이즈·희소 측정 구간 대응 |
+| **Agentic AI (CAE)** | **mcp-design** | 사람 vs 에이전트 "설계 계측기" — 동일 `issue→gate→author→build→measure→verify` 하니스를 **Blender 형상 저작 · OpenFOAM CFD(Cd/Cl) · 크레인 훅 구조해석(Blender→MPSD 라이브 2-툴)** 세 도메인에 적용, 결정론은 코드·판단만 LLM |
+| **PHM / RUL** | **Bearing RUL (KSPHM)** | KSPHM-KIMM Data Challenge 2026 — ~900 물리기반 진동 특징 + total-life quantile(HistGBM) + floor 후처리, CV-LB 불일치 규명 → **최종 11위 (0.4923)** |
 | **Edge Agents** | **pi-orchestration · watcher-agent** | Jetson 로컬 멀티에이전트(planner/executor/validator), GitHub commit → diff 요약 → Slack 자동 리포팅 봇 |
 | **Knowledge Base** | **knowledge-vault** | 논문 리뷰 110+ 노트(Agentic-AI / SciML-PINN / DL foundations) + 자작 Claude 스킬 6종(paper-summary, obsidian-notes 등) |
 
