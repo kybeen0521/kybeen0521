@@ -72,6 +72,14 @@ on edge devices.
 ![Stars](https://img.shields.io/github/stars/kybeen0521?style=flat&logo=github&logoColor=white&label=Stars&labelColor=2E9EF7&color=0d1117&affiliations=OWNER)
 ![Last commit](https://img.shields.io/github/last-commit/kybeen0521/kybeen0521?style=flat&logo=github&logoColor=white&label=Last%20commit&labelColor=2E9EF7&color=0d1117)
 
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kybeen0521/kybeen0521/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kybeen0521/kybeen0521/output/github-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/kybeen0521/kybeen0521/output/github-snake.svg" />
+</picture>
+
 </div>
 
 ---
