@@ -6,7 +6,7 @@ on:
     - cron: "0 */12 * * *"
   # allow manual runs from the Actions tab
   workflow_dispatch:
-  # regenerate on push to main (GITHUB_TOKEN commits don't re-trigger workflows,
+  # regenerate on push to main (token commits don't re-trigger workflows,
   # so the metrics.svg self-commit won't cause a loop)
   push:
     branches:
@@ -20,19 +20,28 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: language + activity metrics
+      - name: languages (full + recent) + isocalendar
         uses: lowlighter/metrics@latest
         with:
-          # GITHUB_TOKEN keeps this zero-setup (public data only).
-          # For private-repo language stats, replace with a classic PAT
-          # stored as the METRICS_TOKEN secret.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # classic PAT (repo + read:user), stored as the METRICS_TOKEN secret,
+          # needed for cross-repo / private language stats and recent-commit analysis
+          token: ${{ secrets.METRICS_TOKEN }}
           user: kybeen0521
           filename: metrics.svg
           template: classic
           base: header, activity
           config_timezone: Asia/Seoul
+
+          # --- Languages: all-time + recent-commit breakdown ---
           plugin_languages: yes
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           plugin_languages_colors: github
+          plugin_languages_indepth: yes
+          plugin_languages_recent_days: 90
+          plugin_languages_recent_load: 300
+
+          # --- Isocalendar: 1-year contribution heatmap ---
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
