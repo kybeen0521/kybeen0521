@@ -68,8 +68,9 @@ on edge devices.
 
 <div align="center">
 
-![Stats](https://github-readme-stats.vercel.app/api?username=kybeen0521&show_icons=true&theme=default&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kybeen0521&layout=compact&hide_border=true)
+![Followers](https://img.shields.io/github/followers/kybeen0521?style=flat&logo=github&logoColor=white&label=Followers&labelColor=2E9EF7&color=0d1117)
+![Stars](https://img.shields.io/github/stars/kybeen0521?style=flat&logo=github&logoColor=white&label=Stars&labelColor=2E9EF7&color=0d1117&affiliations=OWNER)
+![Last commit](https://img.shields.io/github/last-commit/kybeen0521/kybeen0521?style=flat&logo=github&logoColor=white&label=Last%20commit&labelColor=2E9EF7&color=0d1117)
 
 </div>
 
