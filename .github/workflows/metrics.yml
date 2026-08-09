@@ -1,0 +1,33 @@
+name: generate metrics
+
+on:
+  # refresh twice a day
+  schedule:
+    - cron: "0 */12 * * *"
+  # allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# metrics commits the generated SVG back to the repo
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: language + activity metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # GITHUB_TOKEN keeps this zero-setup (public data only).
+          # For private-repo language stats, replace with a classic PAT
+          # stored as the METRICS_TOKEN secret.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: kybeen0521
+          filename: metrics.svg
+          template: classic
+          base: header, activity
+          config_timezone: Asia/Seoul
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_colors: github
