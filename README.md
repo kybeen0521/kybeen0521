@@ -38,6 +38,7 @@ on edge devices.
 | Area | Project | Summary |
 |------|---------|---------|
 | **PHM 실증** | **IE4 Motor Field Trial** | 부산 자갈치 IE4 고효율 모터 현장에 MotorSense 진동센서 설치 → WiFi AP → 클라우드 Console → API 파형 수집 파이프라인 구축 (현장 출장·통신 셋업·데이터셋 생성) |
+| **논문 집필** | **Compressor Performance Map (KSFM)** | 가변속 및 입구 안내깃(IGV) 제어 1500 HP급 3단 원심 공기압축기의 성능맵 구성 방법론. 공장 시험 곡선 16개에서 **GPR 대리모델**(토출압·전력)을 학습해 등온효율 성능맵을 예측 표준편차와 함께 제시, leave-one-out 교차검증 및 회전수 제외 검정으로 일반화 검증. 한국유체기계학회 논문집(KCI) 투고 준비 |
 | **유체기기 최적화** | **KETI_FLOW** | 펌프/팬 운전점 최적화 시스템 — 표준 CSV → **GPR 대리모델**(Head·Power) → LUT·PQ맵 사전계산 → MQTT 학습수신 + TCP 예측루프 런타임 |
 | **Agentic AI (CAE)** | **mcp-design** | 사람 vs 에이전트 "설계 계측기" — 동일 `issue→gate→author→build→measure→verify` 하니스를 **Blender 형상 저작 · OpenFOAM CFD(Cd/Cl) · 크레인 훅 구조해석(Blender→MPSD 라이브 2-툴)** 세 도메인에 적용, 결정론은 코드·판단만 LLM |
 | **PHM / RUL** | **Bearing RUL (KSPHM)** | KSPHM-KIMM Data Challenge 2026 — ~900 물리기반 진동 특징 + total-life quantile(HistGBM) + floor 후처리, CV-LB 불일치 규명 → **최종 11위 (0.4923)** |
